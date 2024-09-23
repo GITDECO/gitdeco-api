@@ -1,0 +1,128 @@
+<svg width="1433" height="1259" viewBox="0 0 1433 1259" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style type="text/css">
+      @font-face {
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 400;
+        src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/woff2/Pretendard-Regular.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 700;
+        src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/woff2/Pretendard-Bold.woff2') format('woff2');
+      }
+      text {
+        font-family: 'Pretendard', sans-serif;
+        font-weight: bold;
+      }
+      .header-name {
+        font-family: "Pretendard", cursive;
+        font-size: 6rem;
+        stroke-width: 3px;
+        stroke: #ffffff;
+        fill: transparent;
+        stroke-dashoffset: 750;
+        stroke-dasharray: 750;
+        animation: stroke 1.5s linear;
+        animation-fill-mode: forwards;
+      }
+      @keyframes stroke {
+        0% {
+          stroke-dashoffset: 750;
+        }
+        70% {
+          fill: #fff;
+        }
+        100% {
+          stroke-dashoffset: 0;
+          fill: #fff;
+        }
+      }
+    </style>
+    <script type="text/javascript">
+      const projectName = document.getElementById('projectName');
+      const projectRole = document.getElementById('projectRole');
+      
+      function updateRolePosition() {
+        const bbox = projectName.getBBox();
+        projectRole.setAttribute('x', bbox.x + bbox.width + 10);
+      }
+      
+      updateRolePosition();
+      
+      window.addEventListener('resize', updateRolePosition);
+    </script>
+    <pattern id="pattern0_315_164" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_315_164" transform="matrix(0.000532743 0 0 0.00243309 -0.0828207 0)"/>
+    </pattern>
+    <filter id="filter0_d_315_164" x="123.332" y="228.431" width="178" height="178" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="15"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_315_164"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_315_164" result="shape"/>
+    </filter>
+    <filter id="filter1_d_315_164" x="109.983" y="488.403" width="634" height="384" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_315_164"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="20"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_315_164"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_315_164" result="shape"/>
+    </filter>
+    <image id="image0_315_164" width="2188" height="411" xlink:href="data:image/png;base64,{{.BackgroundImageValue}}"/>
+  </defs>
+  <rect width="1433" height="950" fill="#F2F2F2"/>
+  <rect width="1433" height="312.931" fill="url(#pattern0_315_164)"/>
+  <text class="header-name" x="50%" y="14%" text-anchor="middle">
+    {{.HeaderName}}
+  </text>
+  <g filter="url(#filter0_d_315_164)">
+    <!-- <rect x="153.332" y="254.431" width="118" height="118" rx="59" fill="white"/> -->
+    <image x="153.332" y="254.431" width="118" height="118" rx="59" xlink:href="data:image/png;base64,{{.ProfileImageValue}}"/>
+  </g>
+  <text x="10%" y="34%" font-family="Roboto" fill="black" font-size="36">
+    {{.Title}}
+  </text>
+  <!-- <foreignObject x="10%" y="446.113" width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; gap: 5px;">
+        {{.TechStackList}}
+    </div>
+  </foreignObject> -->
+  <foreignObject x="10%" y="430" width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+        <div style="width: 1200px;">
+            <p style="font-size: 16px;">
+              {{.TechStackList}}
+            </p>
+        </div>
+    </div>
+  </foreignObject>
+  <g filter="url(#filter1_d_315_164)">
+    <!-- <rect x="10%" y="526.403" width="550" height="300" rx="30" fill="white" fill-opacity="0.9" shape-rendering="crispEdges"/> -->
+    <image x="10%" y="526.403" width="550" height="300" rx="30" xlink:href="data:image/png;base64,{{.ProjectIntroImageValue}}"/>
+  </g>
+  <text id="projectName" x="53%" y="45%" font-family="Roboto" fill="black" font-size="40">
+    {{.ProjectTitle}}
+  </text>
+  <text x="53%" y="48%" font-family="Roboto" fill="#357DD2" font-size="20">
+    | {{.ProjectSubTitle}}
+  </text>
+  <foreignObject x="53%" y="48%" width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+        <div style="width: 550px;">
+            <p style="font-size: 20px;">
+              {{.ProjectDescription}}
+            </p>
+        </div>
+    </div>
+  </foreignObject>
+</svg>

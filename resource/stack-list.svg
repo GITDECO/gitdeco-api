@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; gap: 5px;">
+            <div style="width:56px; height:56px; border-radius:10px; background-color:white; position:relative;">
+                <div style="width:42px; height:42px; background-color:black; position:absolute; top:7px; left:7px;"></div>
+            </div>
+            <div style="width:56px; height:56px; border-radius:10px; background-color:white; position:relative;">
+                <div style="width:42px; height:42px; background-color:black; position:absolute; top:7px; left:7px;"></div>
+            </div>
+        </div>
+    </foreignObject>
+</svg>
+
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; flex-direction: column; align-items: center;">
+            <div style="width: 100px; margin-top: 20px; padding: 10px; border: 1px solid black; border-radius: 10px;">
+                <p style="word-wrap: break-word;">
+                    This is a text area where you can write text. The text will automatically wrap to fit within the specified width of the box.
+                </p>
+            </div>
+        </div>
+    </foreignObject>
+</svg> -->

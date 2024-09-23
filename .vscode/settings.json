@@ -1,0 +1,9 @@
+{
+  "workbench.colorTheme": "Umbra",
+  "workbench.preferredDarkColorTheme": "Umbra",
+  "workbench.preferredHighContrastColorTheme": "Umbra",
+  "workbench.preferredHighContrastLightColorTheme": "Umbra",
+  "workbench.preferredLightColorTheme": "Umbra",
+  "workbench.iconTheme": "material-icon-theme",
+  "window.autoDetectColorScheme": true
+}
